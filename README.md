@@ -26,7 +26,7 @@ Use the following command to load an experiment configuration and train the UMSA
 python main.py  -c config/USMA.json --use_trust --use_cossim
 ```
 ### WSI Preprocessing
-Following [CTranspath](https://github.com/Xiyue-Wang/TransPath), we divide each WSI into patches of 512 * 512 pixels, 1024* 1024 pixels, 2048 * 2048 pixels at 20x magnification. Then we adopt the image encoder of Ctranspath to extract patch features.
+Following [CTranspath](https://github.com/Xiyue-Wang/TransPath), we divide each WSI into patches of 512 * 512 pixels, 1024* 1024 pixels, 2048 * 2048 pixels at 20x magnification. Then we adopt the image encoder of CTranspath to extract patch features.
 
 ## 🔥 Part of Results
 **KM-analysis:** The Kaplan-Meier curves of our proposed method over five datasets. The red and blue curves represent high-risk (greater than the median) and low-risk (less than or equal to the median) patients. The x-axis represents the patient's overall survival time (in months), and the y-axis represents the patient's survival probability based on the output of the UMSA.
